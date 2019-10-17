@@ -1,0 +1,50 @@
+ 
+
+ Author: Mori Fihri
+         mori_Ab@hotmail.com
+ 
+ 
+ 
+ Scope of project
+===============
+
+This application solves the need for:
+
+1) Calculating tax percentage for residential, commercial and industrial properties
+2) A percentage of collected tax is allocated to city services, organizations and boards proportianate with each type of property.
+
+The percentages are provided by the municipality's finance department every tax year (hence the assigned values for class properties).
+
+There are three formulas to calculate property tax:
+
+1) A formula for calculating property tax for the different propperty types
+2) A formula for calculating tax percentage distributed to service department(Eg. public works) and boards(eg. Library - other than education) recipients
+2) A formula for calculating tax percentage distributed to the Education board
+
+Structual design
+===============
+
+A parent class setting the blueprint for levied tax based on property value, type and tax portion going for service support.
+Tax variation based on rate was left as job for the object running a calculator method.
+
+Notes:
+
+In the class file(the formula function), all calculated amounts variables are wrapped in a return array at the bottom .
+The array is called on the formula function at the calculator form:
+
+try {
+$taxArr = array($taxAmount, );
+$PropertyTaxCalculator1->formula()[0];
+}
+catch (TypeError $error){ 
+echo "Error!: " .$error->getMessage();
+}
+
+?>
+
+
+The calculator form is embedded with the Controller for easy implemetation and user-friendliness (user stays at the form to perform other checks if needed).
+A seperate form file for the View and a seperate Controller are part of the package. No Model componenet was needed for this project.
+
+Disclaimer:
+This app is not 100% ready for production deployment - some refinements are needed.
