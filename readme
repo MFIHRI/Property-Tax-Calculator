@@ -47,7 +47,7 @@ echo "Error!: " .$error->getMessage();
 
 
 The calculator form is embedded with the Controller for easy implemetation and user-friendliness (user stays at the form to perform other checks if needed).
-A seperate form file for the View and a seperate Controller are part of the package. No Model componenet was needed for this project.
+A seperate form file for the View and a seperate Controller(PropertyTaxCalculator.inc.php) are part of the package. No Model componenet was needed for this project.
 
 Disclaimer:
 This app is not 100% ready for production deployment - some refinements are needed.
