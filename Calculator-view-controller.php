@@ -155,7 +155,7 @@ echo " <span style='font-family: verdana; font-size: 10pt; font-weight: bolder; 
 <tr>
     <td>Planning and Development</td>
     <td> $<?php echo $taxArr[13];?> </td>		
-  </tr>1
+  </tr>
 
 <tr style="background-color: #f1f1c1;">
     <td>Environmental Services</td>
